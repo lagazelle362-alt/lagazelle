@@ -1,184 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="LA GAZELLE - Traditional Mauritanian Biscuits. Authentic taste, timeless tradition." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LA GAZELLE — traditional Mauritanian biscuits, baked with care in Nouakchott.">
+  <meta name="theme-color" content="#8c0005">
   <title>LA GAZELLE | Traditional Mauritanian Biscuits</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="#home" class="brand">
-        <span class="brand-ar" data-i18n="brandAr">الغزال</span>
-        <span class="brand-en">LA GAZELLE</span>
-        <small data-i18n="tagline">Traditional Mauritanian Biscuits</small>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="home">
+    <div class="nav-shell">
+      <a href="#home" class="brand" aria-label="LA GAZELLE home">
+        <span class="brand-mark" aria-hidden="true">◆</span>
+        <span class="brand-type">
+          <span class="brand-ar" data-i18n="brandAr">الغزال</span>
+          <span class="brand-en">LA GAZELLE</span>
+          <small data-i18n="tagline">Traditional Mauritanian Biscuits</small>
+        </span>
       </a>
 
-      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Open menu</span>
+      </button>
 
-      <nav class="nav-links">
-        <a href="#home" data-i18n="navHome">Home</a>
+      <nav class="nav-links" id="primaryNav" aria-label="Primary navigation">
+        <a class="active" href="#home" data-i18n="navHome">Home</a>
         <a href="#biscuits" data-i18n="navBiscuits">Our Biscuits</a>
         <a href="#story" data-i18n="navStory">Our Story</a>
         <a href="#quality" data-i18n="navQuality">Quality</a>
-        <a href="#wholesale" data-i18n="navWholesale">Wholesale</a>
+        <a href="#contact" data-i18n="navWholesale">Wholesale</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
 
-      <button class="language-switch" id="languageSwitch">
-        <span class="lang-active">EN</span>
-        <span>العربية</span>
+      <button class="language-switch" id="languageSwitch" type="button" aria-label="Switch language">
+        <span class="lang-active">EN</span><span>العربية</span>
       </button>
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-overlay"></div>
-      <div class="container hero-grid">
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="hero-wash" aria-hidden="true"></div>
+      <div class="page-shell hero-grid">
         <div class="hero-copy">
-          <div class="arabic-hero" data-i18n="brandAr">الغزال</div>
-          <h1>LA GAZELLE</h1>
-          <p class="hero-subtitle" data-i18n="heroSubtitle">TRADITIONAL MAURITANIAN BISCUITS</p>
-          <div class="ornament">✦</div>
+          <p class="hero-ar" data-i18n="brandAr">الغزال</p>
+          <h1 id="hero-title">LA GAZELLE</h1>
+          <p class="hero-kicker" data-i18n="heroSubtitle">TRADITIONAL MAURITANIAN BISCUITS</p>
+          <span class="ornament" aria-hidden="true"><i></i>◆<i></i></span>
           <p class="hero-slogan" data-i18n="heroSlogan">A taste of tradition,<br>made for today.</p>
-          <p class="hero-description" data-i18n="heroDescription">
-            Authentic Mauritanian biscuits crafted with care for everyday moments and family gatherings.
-          </p>
-          <a class="btn btn-primary" href="#biscuits" data-i18n="discover">Discover Our Biscuits <span>→</span></a>
+          <p class="hero-description" data-i18n="heroDescription">Made with carefully selected ingredients and baked to perfection. Authentic taste. Timeless tradition.</p>
+          <a class="button button-primary" href="#biscuits"><span data-i18n="discover">Discover our biscuits</span><b aria-hidden="true">→</b></a>
         </div>
 
-        <div class="product-stage">
-          <div class="sun-glow"></div>
-          <img src="assets/product-package.png" alt="LA GAZELLE traditional Mauritanian biscuits package" class="product-package">
-          <div class="floating-biscuit biscuit-one"></div>
-          <div class="floating-biscuit biscuit-two"></div>
-          <div class="floating-biscuit biscuit-three"></div>
+        <div class="product-stage" aria-label="LA GAZELLE biscuit package">
+          <span class="product-halo" aria-hidden="true"></span>
+          <img class="product-package" src="assets/product-package.png" alt="Red and gold LA GAZELLE traditional biscuit package">
+          <span class="biscuit biscuit-a" aria-hidden="true"></span>
+          <span class="biscuit biscuit-b" aria-hidden="true"></span>
+          <span class="biscuit biscuit-c" aria-hidden="true"></span>
         </div>
       </div>
     </section>
 
-    <section class="trust-bar">
-      <div class="container trust-grid">
-        <div class="trust-item"><span class="trust-icon">✾</span><div><strong data-i18n="qualityIngredients">Quality Ingredients</strong><small data-i18n="qualityIngredientsText">Selected for authentic taste</small></div></div>
-        <div class="trust-item"><span class="trust-icon">♨</span><div><strong data-i18n="baked">Baked with Care</strong><small data-i18n="bakedText">Traditional taste in every bite</small></div></div>
-        <div class="trust-item"><span class="trust-icon">♥</span><div><strong data-i18n="madeCare">Made with Care</strong><small data-i18n="madeCareText">Passion in every biscuit</small></div></div>
-        <div class="trust-item"><span class="trust-icon">✦</span><div><strong data-i18n="madeMauritania">Made in Mauritania</strong><small data-i18n="madeMauritaniaText">Proudly produced in Nouakchott</small></div></div>
+    <section class="trust-bar" aria-label="Our values">
+      <div class="page-shell trust-grid">
+        <article class="trust-item"><span class="round-icon" aria-hidden="true">✾</span><div><h2 data-i18n="qualityIngredients">Quality ingredients</h2><p data-i18n="qualityIngredientsText">Carefully selected for the best taste</p></div></article>
+        <article class="trust-item"><span class="round-icon" aria-hidden="true">♨</span><div><h2 data-i18n="baked">Baked to perfection</h2><p data-i18n="bakedText">Traditional baking for a golden quality</p></div></article>
+        <article class="trust-item"><span class="round-icon" aria-hidden="true">♥</span><div><h2 data-i18n="madeCare">Made with care</h2><p data-i18n="madeCareText">Passion and know-how in every biscuit</p></div></article>
+        <article class="trust-item"><span class="round-icon map-icon" aria-hidden="true">MR</span><div><h2 data-i18n="madeMauritania">Made in Mauritania</h2><p data-i18n="madeMauritaniaText">Proudly produced in Nouakchott</p></div></article>
       </div>
     </section>
 
-    <section class="section biscuits-section" id="biscuits">
-      <div class="container two-column">
-        <div class="biscuits-photo">
-          <div class="photo-frame">
-            <div class="tea-glass glass-one"><span class="glass-band"></span></div>
-            <div class="tea-glass glass-two"><span class="glass-band"></span></div>
-            <div class="biscuit-plate">
-              <div class="large-biscuit b1"></div>
-              <div class="large-biscuit b2"></div>
-              <div class="large-biscuit b3"></div>
-              <div class="large-biscuit b4"></div>
-              <div class="large-biscuit b5"></div>
-            </div>
+    <section class="biscuits-section section" id="biscuits" aria-labelledby="biscuits-title">
+      <div class="page-shell biscuit-layout">
+        <div class="biscuit-photo-wrap">
+          <img src="assets/biscuits-tea.webp" alt="Golden traditional biscuits with Mauritanian tea" loading="lazy">
+          <span class="photo-corner" aria-hidden="true"></span>
+        </div>
+        <div class="section-copy centered-copy">
+          <p class="eyebrow" data-i18n="ourBiscuits">Our biscuits</p>
+          <h2 id="biscuits-title" data-i18n="traditionalBiscuits">Traditional Mauritanian Biscuits</h2>
+          <span class="ornament" aria-hidden="true"><i></i>◆<i></i></span>
+          <p class="lead" data-i18n="biscuitsText">LA GAZELLE biscuits are inspired by Mauritanian tradition. Crunchy, delicious and made to accompany your tea moments and family gatherings.</p>
+          <div class="feature-grid">
+            <div><span class="mini-icon">✾</span><strong data-i18n="traditionalRecipe">Traditional<br>Recipe</strong></div>
+            <div><span class="mini-icon">❧</span><strong data-i18n="noColors">No Artificial<br>Colors</strong></div>
+            <div><span class="mini-icon">◇</span><strong data-i18n="noPreservatives">No Preservatives<br>Added</strong></div>
+            <div><span class="mini-icon">☕</span><strong data-i18n="teaCoffee">Perfect with<br>Tea &amp; Coffee</strong></div>
           </div>
-        </div>
-        <div class="section-copy">
-          <span class="eyebrow" data-i18n="ourBiscuits">OUR BISCUITS</span>
-          <h2 data-i18n="traditionalBiscuits">Traditional Mauritanian Biscuits</h2>
-          <div class="ornament">✦</div>
-          <p data-i18n="biscuitsText">
-            LA GAZELLE biscuits bring the warmth of Mauritanian tradition to every table. Crunchy, delicious and made to accompany tea, coffee and family moments.
-          </p>
-          <div class="feature-list">
-            <div><span>✾</span><strong data-i18n="traditionalRecipe">Traditional<br>Recipe</strong></div>
-            <div><span>◌</span><strong data-i18n="carefullyMade">Carefully<br>Made</strong></div>
-            <div><span>◇</span><strong data-i18n="qualityControl">Quality<br>Control</strong></div>
-            <div><span>☕</span><strong data-i18n="teaCoffee">Perfect with<br>Tea & Coffee</strong></div>
-          </div>
-          <a class="btn btn-primary" href="#contact" data-i18n="contactUs">Contact Us <span>→</span></a>
+          <a class="button button-primary" href="#contact"><span data-i18n="viewBiscuits">View our biscuits</span><b aria-hidden="true">→</b></a>
         </div>
       </div>
     </section>
 
-    <section class="section story-section" id="story">
-      <div class="container story-grid">
+    <section class="story-section section" id="story" aria-labelledby="story-title">
+      <div class="page-shell story-layout">
         <div class="story-copy">
-          <span class="eyebrow" data-i18n="ourStory">OUR STORY</span>
-          <h2 data-i18n="bornTradition">Born from Tradition,<br>Built for the Future</h2>
-          <p><strong>SOCIETE BISCUITERIE EL KHEIR SARL</strong> <span data-i18n="storyText">is a Mauritanian company dedicated to producing traditional biscuits with authentic taste and care.</span></p>
-          <p data-i18n="storyText2">We combine the warmth of tradition with a commitment to consistent quality, creating biscuits made for families, businesses and communities.</p>
-          <a class="btn btn-outline" href="#contact" data-i18n="learnMore">Learn More About Us <span>→</span></a>
+          <p class="eyebrow" data-i18n="ourStory">Our story</p>
+          <h2 id="story-title" data-i18n="bornTradition">Born from Tradition,<br>Built for the Future</h2>
+          <span class="ornament ornament-left" aria-hidden="true"><i></i>◆<i></i></span>
+          <p><strong>SOCIETE BISCUITERIE EL KHEIR SARL (LA GAZELLE)</strong> <span data-i18n="storyText">is a Mauritanian company specialized in the production of traditional biscuits.</span></p>
+          <p data-i18n="storyText2">We combine traditional recipes with modern production standards to offer biscuits of exceptional quality and authentic taste.</p>
+          <a class="button button-primary" href="#contact"><span data-i18n="learnMore">Learn more about us</span><b aria-hidden="true">→</b></a>
         </div>
-        <div class="factory-visual">
-          <div class="factory-card">
-            <div class="factory-building">
-              <div class="factory-sign">الغزال<br><small>LA GAZELLE</small></div>
-              <div class="factory-door"></div>
-              <div class="factory-window"></div>
-              <div class="factory-window second"></div>
-            </div>
-          </div>
-        </div>
-        <div class="quality-card" id="quality">
-          <span class="quality-shield">◇</span>
-          <h3 data-i18n="qualitySafety">QUALITY & SAFETY</h3>
-          <p data-i18n="qualityText">We are committed to quality, hygiene and care at every step of production.</p>
+
+        <article class="quality-card" id="quality">
+          <span class="shield" aria-hidden="true">♢</span>
+          <h2 data-i18n="qualitySafety">Quality &amp; Safety</h2>
+          <p data-i18n="qualityText">We are committed to the highest standards of quality, hygiene and food safety at every step of our production.</p>
           <ul>
             <li data-i18n="hygienic">Hygienic Production</li>
             <li data-i18n="qualityControl2">Quality Control</li>
-            <li data-i18n="safeTrusted">Safe & Trusted</li>
+            <li data-i18n="safeTrusted">Safe &amp; Trusted</li>
             <li data-i18n="customerSatisfaction">Customer Satisfaction</li>
           </ul>
-        </div>
+        </article>
       </div>
     </section>
 
-    <section class="section wholesale-section" id="wholesale">
-      <div class="container wholesale-inner">
-        <span class="eyebrow light" data-i18n="wholesaleTitle">WHOLESALE & DISTRIBUTION</span>
-        <h2 data-i18n="wholesaleHeadline">Bring the taste of LA GAZELLE to your customers.</h2>
-        <p data-i18n="wholesaleText">We welcome retailers, distributors and business partners looking for authentic Mauritanian biscuits.</p>
-        <a class="btn btn-light" href="#contact" data-i18n="becomePartner">Become a Partner <span>→</span></a>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="container contact-grid">
-        <div>
-          <span class="eyebrow" data-i18n="contactTitle">CONTACT US</span>
-          <h2 data-i18n="contactHeadline">Let’s share the taste of tradition.</h2>
-          <p data-i18n="contactText">For wholesale inquiries, distribution and more information, contact LA GAZELLE.</p>
-        </div>
-        <div class="contact-details">
-          <a href="tel:+22247906456"><span>☎</span> +222 47906456</a>
-          <a href="mailto:lagazelle362@gmail.com"><span>✉</span> lagazelle362@gmail.com</a>
-          <div><span>⌖</span> Carrefour Bamako, Nouakchott, Mauritania</div>
-          <a class="whatsapp" href="https://wa.me/22247906456" target="_blank" rel="noopener"><span>◉</span> WhatsApp — Chat with us</a>
-        </div>
+    <section class="contact-ribbon" id="contact" aria-label="Contact LA GAZELLE">
+      <div class="page-shell contact-grid">
+        <a href="tel:+22247906456" class="contact-item"><span class="contact-icon" aria-hidden="true">☎</span><span><strong>+222 47906456</strong><small>+222 36 47 47 25</small></span></a>
+        <a href="mailto:lagazelle362@gmail.com" class="contact-item"><span class="contact-icon" aria-hidden="true">✉</span><span><strong>lagazelle362@gmail.com</strong><small data-i18n="emailUs">Email us</small></span></a>
+        <div class="contact-item"><span class="contact-icon" aria-hidden="true">⌖</span><span><strong>Carrefour Bamako</strong><small>Nouakchott, Mauritania</small></span></div>
+        <a href="https://wa.me/22247906456" target="_blank" rel="noopener noreferrer" class="contact-item"><span class="contact-icon" aria-hidden="true">◉</span><span><strong>WhatsApp</strong><small data-i18n="chatWithUs">Chat with us</small></span></a>
+        <a href="https://www.facebook.com/profile.php?id=61592717606576" target="_blank" rel="noopener noreferrer" class="contact-item facebook-link"><span class="contact-icon facebook-icon" aria-hidden="true">f</span><span><strong>Facebook</strong><small data-i18n="followUs">Follow LA GAZELLE</small></span></a>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <div><strong>LA GAZELLE</strong><small data-i18n="footerTagline">Traditional Mauritanian Biscuits</small></div>
+  <footer class="site-footer">
+    <div class="page-shell footer-inner">
       <p>© <span id="year"></span> LA GAZELLE. <span data-i18n="allRights">All rights reserved.</span></p>
+      <a href="https://www.facebook.com/profile.php?id=61592717606576" target="_blank" rel="noopener noreferrer" aria-label="Follow LA GAZELLE on Facebook"><span aria-hidden="true">f</span> Facebook</a>
     </div>
-  
-<div class="social-links" style="margin-top:20px;text-align:center">
-<h3>Follow Us</h3>
-
-<a href="https://www.facebook.com/profile.php?id=61592717606576&mibextid=wwXIfr&mibextid=wwXIfr" target="_blank">Facebook</a></p>
-</div>
-</footer>
+  </footer>
 
   <script src="script.js"></script>
-
-
 </body>
 </html>
