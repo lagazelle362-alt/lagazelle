@@ -4,23 +4,28 @@ const translations = {
     navHome: "Home", navBiscuits: "Our Biscuits", navStory: "Our Story", navQuality: "Quality", navWholesale: "Wholesale", navContact: "Contact",
     heroSubtitle: "TRADITIONAL MAURITANIAN BISCUITS", heroSlogan: "A taste of tradition,<br>made for today.", heroDescription: "Made with carefully selected ingredients and baked to perfection. Authentic taste. Timeless tradition.", discover: "Discover our biscuits",
     qualityIngredients: "Quality ingredients", qualityIngredientsText: "Carefully selected for the best taste", baked: "Baked to perfection", bakedText: "Traditional baking for a golden quality", madeCare: "Made with care", madeCareText: "Passion and know-how in every biscuit", madeMauritania: "Made in Mauritania", madeMauritaniaText: "Proudly produced in Nouakchott",
-    ourBiscuits: "Our biscuits", traditionalBiscuits: "Traditional Mauritanian Biscuits", biscuitsText: "LA GAZELLE biscuits are inspired by Mauritanian tradition. Crunchy, delicious and made to accompany your tea moments and family gatherings.", traditionalRecipe: "Traditional<br>Recipe", noColors: "No Artificial<br>Colors", noPreservatives: "No Preservatives<br>Added", teaCoffee: "Perfect with<br>Tea & Coffee", viewBiscuits: "View our biscuits",
-    ourStory: "Our story", bornTradition: "Born from Tradition,<br>Built for the Future", storyText: "is a Mauritanian company specialized in the production of traditional biscuits.", storyText2: "We combine traditional recipes with modern production standards to offer biscuits of exceptional quality and authentic taste.", learnMore: "Learn more about us",
+    ourBiscuits: "Our biscuits", traditionalBiscuits: "Traditional Mauritanian Biscuits", biscuitsText: "LA GAZELLE biscuits are inspired by Mauritanian tradition. Crunchy, delicious and made to accompany your tea moments and family gatherings.", traditionalRecipe: "Traditional<br>Recipe", noColors: "No Artificial<br>Colors", noPreservatives: "No Preservatives<br>Added", teaCoffee: "Perfect with<br>Tea & Coffee", orderWhatsApp: "Order on WhatsApp",
+    ourStory: "Our story", bornTradition: "Born from Tradition,<br>Built for the Future", storyText: "is a Mauritanian company specialized in the production of traditional biscuits.", storyText2: "We combine traditional recipes with modern production standards to offer biscuits of exceptional quality and authentic taste.", wholesaleEnquiries: "Wholesale enquiries",
+    wholesaleTitle: "Stock LA GAZELLE in your shop", wholesaleText: "Shops, cafés, hotels and distributors: contact us for wholesale prices and orders.",
     qualitySafety: "Quality & Safety", qualityText: "We are committed to the highest standards of quality, hygiene and food safety at every step of our production.", hygienic: "Hygienic Production", qualityControl2: "Quality Control", safeTrusted: "Safe & Trusted", customerSatisfaction: "Customer Satisfaction",
-    emailUs: "Email us", chatWithUs: "Chat with us", followUs: "Follow LA GAZELLE", allRights: "All rights reserved."
+    callUs: "Call us", emailUs: "Email us", chatWithUs: "Chat with us", followUs: "Follow LA GAZELLE", allRights: "All rights reserved.",
+    waOrder: "Hello LA GAZELLE, I would like to order biscuits.", waWholesale: "Hello LA GAZELLE, I am interested in wholesale prices."
   },
   ar: {
     brandAr: "الغزال", tagline: "بسكويت موريتاني تقليدي",
     navHome: "الرئيسية", navBiscuits: "بسكويتنا", navStory: "قصتنا", navQuality: "الجودة", navWholesale: "الجملة", navContact: "اتصل بنا",
     heroSubtitle: "بسكويت موريتاني تقليدي", heroSlogan: "طعم من التقاليد،<br>مصنوع لليوم.", heroDescription: "مصنوع من مكونات مختارة بعناية ومخبوز بإتقان. مذاق أصيل وتقاليد خالدة.", discover: "اكتشف بسكويتنا",
     qualityIngredients: "مكونات عالية الجودة", qualityIngredientsText: "مختارة بعناية لأفضل مذاق", baked: "مخبوز بإتقان", bakedText: "خبز تقليدي لجودة ذهبية", madeCare: "مصنوع بعناية", madeCareText: "شغف وخبرة في كل قطعة", madeMauritania: "صنع في موريتانيا", madeMauritaniaText: "إنتاج محلي بفخر في نواكشوط",
-    ourBiscuits: "بسكويتنا", traditionalBiscuits: "بسكويت موريتاني تقليدي", biscuitsText: "بسكويت الغزال مستوحى من التقاليد الموريتانية. مقرمش ولذيذ ومصنوع لمرافقة لحظات الشاي واللقاءات العائلية.", traditionalRecipe: "وصفة<br>تقليدية", noColors: "بدون ألوان<br>اصطناعية", noPreservatives: "بدون مواد<br>حافظة", teaCoffee: "مثالي مع<br>الشاي والقهوة", viewBiscuits: "شاهد بسكويتنا",
-    ourStory: "قصتنا", bornTradition: "وُلد من التقاليد،<br>وصُنع للمستقبل", storyText: "هي شركة موريتانية متخصصة في إنتاج البسكويت التقليدي.", storyText2: "نجمع بين الوصفات التقليدية ومعايير الإنتاج الحديثة لنقدم بسكويتاً بجودة استثنائية ومذاق أصيل.", learnMore: "اعرف المزيد عنا",
+    ourBiscuits: "بسكويتنا", traditionalBiscuits: "بسكويت موريتاني تقليدي", biscuitsText: "بسكويت الغزال مستوحى من التقاليد الموريتانية. مقرمش ولذيذ ومصنوع لمرافقة لحظات الشاي واللقاءات العائلية.", traditionalRecipe: "وصفة<br>تقليدية", noColors: "بدون ألوان<br>اصطناعية", noPreservatives: "بدون مواد<br>حافظة", teaCoffee: "مثالي مع<br>الشاي والقهوة", orderWhatsApp: "اطلب عبر واتساب",
+    ourStory: "قصتنا", bornTradition: "وُلد من التقاليد،<br>وصُنع للمستقبل", storyText: "هي شركة موريتانية متخصصة في إنتاج البسكويت التقليدي.", storyText2: "نجمع بين الوصفات التقليدية ومعايير الإنتاج الحديثة لنقدم بسكويتاً بجودة استثنائية ومذاق أصيل.", wholesaleEnquiries: "طلبات الجملة",
+    wholesaleTitle: "وفّر الغزال في متجرك", wholesaleText: "المتاجر والمقاهي والفنادق والموزعون: تواصلوا معنا لأسعار الجملة والطلبات.",
     qualitySafety: "الجودة والسلامة", qualityText: "نلتزم بأعلى معايير الجودة والنظافة وسلامة الغذاء في كل مرحلة من مراحل الإنتاج.", hygienic: "إنتاج صحي", qualityControl2: "مراقبة الجودة", safeTrusted: "آمن وموثوق", customerSatisfaction: "رضا العملاء",
-    emailUs: "راسلنا", chatWithUs: "تحدث معنا", followUs: "تابع الغزال", allRights: "جميع الحقوق محفوظة."
+    callUs: "اتصل بنا", emailUs: "راسلنا", chatWithUs: "تحدث معنا", followUs: "تابع الغزال", allRights: "جميع الحقوق محفوظة.",
+    waOrder: "مرحباً الغزال، أود طلب البسكويت.", waWholesale: "مرحباً الغزال، أنا مهتم بأسعار الجملة."
   }
 };
 
+const WHATSAPP_URL = "https://wa.me/22247906456?text=";
 let currentLang = "en";
 const languageSwitch = document.querySelector("#languageSwitch");
 const menuToggle = document.querySelector(".menu-toggle");
@@ -34,6 +39,10 @@ function setLanguage(lang) {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const value = translations[lang][element.dataset.i18n];
     if (value) element.innerHTML = value;
+  });
+
+  document.querySelectorAll("[data-wa]").forEach((link) => {
+    link.href = WHATSAPP_URL + encodeURIComponent(translations[lang][link.dataset.wa]);
   });
 
   languageSwitch.innerHTML = lang === "en"
