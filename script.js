@@ -1,26 +1,56 @@
 const translations = {
   en: {
-    brandAr: "الغزال", tagline: "Traditional Mauritanian Biscuits",
-    navHome: "Home", navBiscuits: "Our Biscuits", navStory: "Our Story", navQuality: "Quality", navWholesale: "Wholesale", navContact: "Contact",
-    heroSubtitle: "TRADITIONAL MAURITANIAN BISCUITS", heroSlogan: "A taste of tradition,<br>made for today.", heroDescription: "Made with carefully selected ingredients and baked to perfection. Authentic taste. Timeless tradition.", discover: "Discover our biscuits", heroCompanion: "The perfect companion for your atay",
-    qualityIngredients: "Quality ingredients", qualityIngredientsText: "Carefully selected for the best taste", baked: "Baked to perfection", bakedText: "Traditional baking for a golden quality", madeCare: "Made with care", madeCareText: "Passion and know-how in every biscuit", madeMauritania: "Made in Mauritania", madeMauritaniaText: "Proudly produced in Nouakchott",
-    ourBiscuits: "Our biscuits", traditionalBiscuits: "Traditional Mauritanian Biscuits", biscuitsText: "LA GAZELLE biscuits are inspired by Mauritanian tradition. Crunchy, delicious and made to accompany your tea moments and family gatherings.", traditionalRecipe: "Traditional<br>Recipe", noColors: "No Artificial<br>Colors", noPreservatives: "No Preservatives<br>Added", teaCoffee: "Perfect with<br>Tea & Coffee", orderWhatsApp: "Order on WhatsApp",
-    ourStory: "Our story", bornTradition: "Born from Tradition,<br>Built for the Future", storyText: "is a Mauritanian company specialized in the production of traditional biscuits.", storyText2: "We combine traditional recipes with modern production standards to offer biscuits of exceptional quality and authentic taste.", wholesaleEnquiries: "Wholesale enquiries",
-    wholesaleTitle: "Stock LA GAZELLE in your shop", wholesaleText: "Shops, cafés, hotels and distributors: contact us for wholesale prices and orders.",
-    qualitySafety: "Quality & Safety", qualityText: "We are committed to the highest standards of quality, hygiene and food safety at every step of our production.", hygienic: "Hygienic Production", qualityControl2: "Quality Control", safeTrusted: "Safe & Trusted", customerSatisfaction: "Customer Satisfaction",
-    callUs: "Call us", emailUs: "Email us", chatWithUs: "Chat with us", followUs: "Follow LA GAZELLE", allRights: "All rights reserved.",
+    skip: "Skip to content", navLabel: "Main",
+    navBiscuits: "Our biscuits", navStory: "Our story", navWholesale: "Wholesale", navContact: "Contact",
+    heroLead: "Traditional Mauritanian biscuits, baked in Nouakchott. Crisp, lightly sweet, and made to sit beside a glass of atay.",
+    orderWhatsApp: "Order on WhatsApp", wholesalePrices: "Wholesale prices",
+    stageLabel: "A bag of La Gazelle biscuits with three biscuits and a glass of tea",
+    biscuitAlt: "La Gazelle biscuit",
+    atayTitle: "The perfect companion for your atay", ataySub: "الرفيق المثالي لكأس أتايك",
+    atayText: "Each biscuit is pressed with our flower pattern and baked until golden. Light enough for the third glass, satisfying enough for the first. Sold in 100 g bags in shops across Nouakchott.",
+    pillRecipe: "Traditional recipe", pillColours: "No artificial colours", pillPreservatives: "No added preservatives",
+    careTitle: "Made with care, from flour to bag",
+    p1Title: "Chosen ingredients", p1Text: "Flour, sugar and milk powder selected for a clean, even taste.",
+    p2Title: "Baked golden", p2Text: "A slow, steady bake for the crisp bite our customers know.",
+    p3Title: "Clean production", p3Text: "Hygiene and quality checks at every step of the line.",
+    p4Title: "Made in Nouakchott", p4Text: "Produced locally by Société Biscuiterie El Kheir.",
+    quote: "A recipe from Mauritanian homes, made in a modern factory.",
+    storyTitle: "Our story",
+    storyText: "La Gazelle is made by Société Biscuiterie El Kheir SARL in the industrial zone at Carrefour Bamako, Nouakchott. We keep the taste families grew up with, and produce it to modern standards so every bag tastes the same.",
+    wholesaleTitle: "Stock La Gazelle in your shop",
+    wholesaleText: "Shops, cafés, hotels and distributors: ask us for wholesale prices and delivery in Nouakchott.",
+    askPrices: "Ask for prices on WhatsApp", emailUs: "Email us",
+    phone: "Phone", call: "Call:", whatsapp: "WhatsApp:", email: "Email", factory: "Factory",
+    factoryAddress: "Zone industrielle, Carrefour Bamako, Nouakchott, Mauritania",
+    socFacebook: "Follow us on Facebook", socMaps: "Find the factory on Google Maps", socWhatsApp: "Chat on WhatsApp",
+    fbLabel: "La Gazelle on Facebook", mapsLabel: "La Gazelle factory on Google Maps",
     waOrder: "Hello LA GAZELLE, I would like to order biscuits.", waWholesale: "Hello LA GAZELLE, I am interested in wholesale prices."
   },
   ar: {
-    brandAr: "الغزال", tagline: "بسكويت موريتاني تقليدي",
-    navHome: "الرئيسية", navBiscuits: "بسكويتنا", navStory: "قصتنا", navQuality: "الجودة", navWholesale: "الجملة", navContact: "اتصل بنا",
-    heroSubtitle: "بسكويت موريتاني تقليدي", heroSlogan: "طعم من التقاليد،<br>مصنوع لليوم.", heroDescription: "مصنوع من مكونات مختارة بعناية ومخبوز بإتقان. مذاق أصيل وتقاليد خالدة.", discover: "اكتشف بسكويتنا", heroCompanion: "الرفيق المثالي لكأس أتايك",
-    qualityIngredients: "مكونات عالية الجودة", qualityIngredientsText: "مختارة بعناية لأفضل مذاق", baked: "مخبوز بإتقان", bakedText: "خبز تقليدي لجودة ذهبية", madeCare: "مصنوع بعناية", madeCareText: "شغف وخبرة في كل قطعة", madeMauritania: "صنع في موريتانيا", madeMauritaniaText: "إنتاج محلي بفخر في نواكشوط",
-    ourBiscuits: "بسكويتنا", traditionalBiscuits: "بسكويت موريتاني تقليدي", biscuitsText: "بسكويت الغزال مستوحى من التقاليد الموريتانية. مقرمش ولذيذ ومصنوع لمرافقة لحظات الشاي واللقاءات العائلية.", traditionalRecipe: "وصفة<br>تقليدية", noColors: "بدون ألوان<br>اصطناعية", noPreservatives: "بدون مواد<br>حافظة", teaCoffee: "مثالي مع<br>الشاي والقهوة", orderWhatsApp: "اطلب عبر واتساب",
-    ourStory: "قصتنا", bornTradition: "وُلد من التقاليد،<br>وصُنع للمستقبل", storyText: "هي شركة موريتانية متخصصة في إنتاج البسكويت التقليدي.", storyText2: "نجمع بين الوصفات التقليدية ومعايير الإنتاج الحديثة لنقدم بسكويتاً بجودة استثنائية ومذاق أصيل.", wholesaleEnquiries: "طلبات الجملة",
-    wholesaleTitle: "وفّر الغزال في متجرك", wholesaleText: "المتاجر والمقاهي والفنادق والموزعون: تواصلوا معنا لأسعار الجملة والطلبات.",
-    qualitySafety: "الجودة والسلامة", qualityText: "نلتزم بأعلى معايير الجودة والنظافة وسلامة الغذاء في كل مرحلة من مراحل الإنتاج.", hygienic: "إنتاج صحي", qualityControl2: "مراقبة الجودة", safeTrusted: "آمن وموثوق", customerSatisfaction: "رضا العملاء",
-    callUs: "اتصل بنا", emailUs: "راسلنا", chatWithUs: "تحدث معنا", followUs: "تابع الغزال", allRights: "جميع الحقوق محفوظة.",
+    skip: "انتقل إلى المحتوى", navLabel: "القائمة الرئيسية",
+    navBiscuits: "بسكويتنا", navStory: "قصتنا", navWholesale: "الجملة", navContact: "اتصل بنا",
+    heroLead: "بسكويت موريتاني تقليدي، يُخبز في نواكشوط. مقرمش، خفيف الحلاوة، ومصنوع ليرافق كأس الأتاي.",
+    orderWhatsApp: "اطلب عبر واتساب", wholesalePrices: "أسعار الجملة",
+    stageLabel: "كيس بسكويت الغزال مع ثلاث قطع بسكويت وكأس أتاي",
+    biscuitAlt: "بسكويت الغزال",
+    atayTitle: "الرفيق المثالي لكأس أتايك", ataySub: "The perfect companion for your atay",
+    atayText: "كل قطعة مطبوعة بنقشة الزهرة الخاصة بنا ومخبوزة حتى يصبح لونها ذهبياً. خفيفة بما يكفي للكأس الثالث، ومُشبعة بما يكفي للكأس الأول. تُباع في أكياس 100 غرام في المتاجر في أنحاء نواكشوط.",
+    pillRecipe: "وصفة تقليدية", pillColours: "بدون ألوان اصطناعية", pillPreservatives: "بدون مواد حافظة مضافة",
+    careTitle: "مصنوع بعناية، من الدقيق إلى الكيس",
+    p1Title: "مكونات مختارة", p1Text: "دقيق وسكر وحليب مجفف مختارة لمذاق نقي ومتوازن.",
+    p2Title: "مخبوز حتى الذهبي", p2Text: "خَبز هادئ ومتأنٍّ يمنح القرمشة التي يعرفها زبائننا.",
+    p3Title: "إنتاج نظيف", p3Text: "فحوص النظافة والجودة في كل مرحلة من مراحل الإنتاج.",
+    p4Title: "صُنع في نواكشوط", p4Text: "يُنتَج محلياً لدى شركة بسكويتري الخير.",
+    quote: "وصفة من البيوت الموريتانية، تُصنع في مصنع حديث.",
+    storyTitle: "قصتنا",
+    storyText: "يُصنع بسكويت الغزال لدى شركة بسكويتري الخير ش.م.م في المنطقة الصناعية بكارفور باماكو، نواكشوط. نحافظ على المذاق الذي نشأت عليه العائلات، وننتجه وفق معايير حديثة ليكون لكل كيس المذاق نفسه.",
+    wholesaleTitle: "وفّر الغزال في متجرك",
+    wholesaleText: "المتاجر والمقاهي والفنادق والموزعون: اطلبوا منا أسعار الجملة والتوصيل في نواكشوط.",
+    askPrices: "اطلب الأسعار عبر واتساب", emailUs: "راسلنا",
+    phone: "الهاتف", call: "اتصال:", whatsapp: "واتساب:", email: "البريد الإلكتروني", factory: "المصنع",
+    factoryAddress: "المنطقة الصناعية، كارفور باماكو، نواكشوط، موريتانيا",
+    socFacebook: "تابعونا على فيسبوك", socMaps: "موقع المصنع على خرائط جوجل", socWhatsApp: "تحدث معنا عبر واتساب",
+    fbLabel: "الغزال على فيسبوك", mapsLabel: "مصنع الغزال على خرائط جوجل",
     waOrder: "مرحباً الغزال، أود طلب البسكويت.", waWholesale: "مرحباً الغزال، أنا مهتم بأسعار الجملة."
   }
 };
@@ -28,42 +58,38 @@ const translations = {
 const WHATSAPP_URL = "https://wa.me/22247906456?text=";
 let currentLang = "en";
 const languageSwitch = document.querySelector("#languageSwitch");
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector("#primaryNav");
 
 function setLanguage(lang) {
+  const t = translations[lang];
   currentLang = lang;
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const value = translations[lang][element.dataset.i18n];
-    if (value) element.innerHTML = value;
+    if (t[element.dataset.i18n]) element.textContent = t[element.dataset.i18n];
   });
-
+  document.querySelectorAll("[data-i18n-label]").forEach((element) => {
+    if (t[element.dataset.i18nLabel]) element.setAttribute("aria-label", t[element.dataset.i18nLabel]);
+  });
+  document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
+    if (t[element.dataset.i18nAlt]) element.alt = t[element.dataset.i18nAlt];
+  });
   document.querySelectorAll("[data-wa]").forEach((link) => {
-    link.href = WHATSAPP_URL + encodeURIComponent(translations[lang][link.dataset.wa]);
+    link.href = WHATSAPP_URL + encodeURIComponent(t[link.dataset.wa]);
   });
 
-  languageSwitch.innerHTML = lang === "en"
-    ? '<span class="lang-active">EN</span><span>العربية</span>'
-    : '<span>EN</span><span class="lang-active">العربية</span>';
-  localStorage.setItem("lagazelle-language", lang);
-}
+  // The pill and the atay subtitle show the other language.
+  languageSwitch.textContent = lang === "en" ? "العربية" : "English";
+  languageSwitch.lang = lang === "en" ? "ar" : "en";
+  document.querySelector(".h2-sub").lang = lang === "en" ? "ar" : "en";
 
-function closeMenu() {
-  navLinks.classList.remove("open");
-  menuToggle.setAttribute("aria-expanded", "false");
+  try { localStorage.setItem("lagazelle-language", lang); } catch (e) {}
 }
 
 languageSwitch.addEventListener("click", () => setLanguage(currentLang === "en" ? "ar" : "en"));
-menuToggle.addEventListener("click", () => {
-  const isOpen = navLinks.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
-});
-
-document.querySelectorAll(".nav-links a").forEach((link) => link.addEventListener("click", closeMenu));
-window.addEventListener("resize", () => { if (window.innerWidth > 780) closeMenu(); });
 
 document.querySelector("#year").textContent = new Date().getFullYear();
-setLanguage(localStorage.getItem("lagazelle-language") === "ar" ? "ar" : "en");
+
+let savedLang = null;
+try { savedLang = localStorage.getItem("lagazelle-language"); } catch (e) {}
+setLanguage(savedLang === "ar" ? "ar" : "en");
