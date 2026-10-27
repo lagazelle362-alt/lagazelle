@@ -47,9 +47,12 @@ button { font: inherit; }
 .nav-links { display: flex; gap: 28px; font-size: 15px; }
 .nav-links a { color: var(--cream); text-decoration: none; opacity: .85; }
 .nav-links a:hover { color: var(--cream); opacity: 1; }
-.lang-pill { padding: 6px 16px; color: var(--cream); background: transparent; border: 1px solid rgba(246,236,220,.4); border-radius: 999px; cursor: pointer; font-size: 15px; }
-.lang-pill:lang(ar) { font: 18px/1.4 var(--arabic-display); }
-.lang-pill:hover { border-color: var(--cream); }
+.lang-switch { display: flex; align-items: center; padding: 0 6px; border: 1px solid rgba(246,236,220,.4); border-radius: 999px; }
+.lang-switch span { color: rgba(246,236,220,.45); }
+.lang-switch button { min-width: 40px; min-height: 40px; padding: 0 8px; color: var(--cream); background: transparent; border: 0; border-radius: 999px; cursor: pointer; font-size: 15px; opacity: .7; }
+.lang-switch button:lang(ar) { font: 18px/1.4 var(--arabic-display); }
+.lang-switch button:hover { opacity: 1; }
+.lang-switch button[aria-pressed="true"] { color: var(--gold); font-weight: 600; opacity: 1; }
 
 /* Hero scene. Static by default; html.motion (set only when the animation can run) turns it into the pinned stage. */
 .scene { position: relative; padding: 16px 0 72px; text-align: center; }
@@ -60,9 +63,12 @@ button { font: inherit; }
 .scene-cta { position: relative; z-index: 5; margin-top: 24px; padding-inline: 16px; }
 .scene-title { margin: 0; color: var(--cream); font: 400 clamp(30px, 4.6vw, 56px)/1.08 var(--latin-display); text-wrap: balance; }
 .alt-lang:lang(ar) { font-family: var(--arabic-display); font-weight: 400; }
-.alt-lang:lang(en) { font-family: var(--latin-display); font-weight: 400; }
+.alt-lang:is(:lang(en), :lang(fr)) { font-family: var(--latin-display); font-weight: 400; }
+/* The line keeps its own direction (for its punctuation) but lines up with the page. */
+html[dir="ltr"] .say-alt { text-align: left; }
+html[dir="rtl"] .say-alt { text-align: right; }
 .scene-cta .alt-lang { margin: 8px 0 0; color: var(--gold); font-size: clamp(22px, 2.6vw, 30px); line-height: 1.3; }
-.scene-cta .fr { margin: 2px 0 0; color: var(--muted); font-size: 15px; }
+.scene-cta .third { margin: 2px 0 0; color: var(--muted); font-size: 15px; }
 .scene-cta .btns, .closing .btns { justify-content: center; margin-top: 22px; }
 .hint { display: none; }
 
@@ -182,6 +188,13 @@ html.motion .say .w.on { color: var(--ink); }
 @media (max-width: 720px) {
   .wrap { padding: 0 22px; }
   .nav-links { display: none; }
+  .nav { gap: 12px; }
+  .brand { gap: 8px; }
+  .brand img { width: 36px; height: 36px; }
+  .brand span { font-size: 19px; }
+  .lang-switch { padding: 0 2px; }
+  .lang-switch button { min-width: 34px; padding: 0 5px; font-size: 14px; }
+  .lang-switch button:lang(ar) { font-size: 16px; }
   .stage { width: min(92vw, 440px); }
   html.motion .stage { top: 52%; }
   .btns { justify-content: center; }
