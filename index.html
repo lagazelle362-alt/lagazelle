@@ -28,6 +28,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Amiri:wght@400;700&family=Albert+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      var root = document.documentElement;
+      if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      root.classList.add("motion");
+      function fallback() { if (!window.lgMotionReady) root.classList.remove("motion"); }
+      window.addEventListener("load", fallback);
+      setTimeout(fallback, 5000);
+    })();
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
@@ -47,53 +57,70 @@
         </div>
         <button class="lang-pill" id="languageSwitch" type="button" lang="ar">العربية</button>
       </nav>
+    </div>
 
-      <div class="hero">
-        <div class="hero-copy">
-          <p class="ar-name" lang="ar">الغزال</p>
-          <h1 class="lat-name">LA GAZELLE</h1>
-          <p class="lead" data-i18n="heroLead">Traditional Mauritanian biscuits, baked in Nouakchott. Crisp, lightly sweet, and made to sit beside a glass of atay.</p>
-          <div class="btns">
-            <a class="btn btn-gold" href="https://wa.me/22247906456" data-wa="waOrder" target="_blank" rel="noopener">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
-              <span data-i18n="orderWhatsApp">Order on WhatsApp</span>
-            </a>
-            <a class="btn btn-line" href="#wholesale" data-i18n="wholesalePrices">Wholesale prices</a>
-          </div>
-        </div>
+    <div class="scene">
+      <div class="scene-name" id="sceneName">
+        <p class="ar-name" lang="ar">الغزال</p>
+        <h1 class="lat-name">LA GAZELLE</h1>
+      </div>
 
-        <div class="stage" role="img" aria-label="A bag of La Gazelle biscuits with three biscuits and a glass of tea" data-i18n-label="stageLabel">
-          <svg viewBox="0 0 400 400" aria-hidden="true">
-            <g fill="#D9B26A"><circle cx="200" cy="108" r="98"/><circle cx="108" cy="200" r="98"/><circle cx="292" cy="200" r="98"/><circle cx="200" cy="292" r="98"/><circle cx="200" cy="200" r="98"/></g>
-            <g fill="#7A0F15"><circle cx="200" cy="108" r="93"/><circle cx="108" cy="200" r="93"/><circle cx="292" cy="200" r="93"/><circle cx="200" cy="292" r="93"/><circle cx="200" cy="200" r="93"/></g>
-          </svg>
-          <img class="glass" src="assets/tea-glass.webp" width="508" height="793" alt="">
-          <img class="bag" src="assets/product-package.webp" width="540" height="566" fetchpriority="high" alt="">
-          <img class="bisc b1" src="assets/biscuit-1.webp" width="238" height="238" alt="">
-          <img class="bisc b2" src="assets/biscuit-2.webp" width="241" height="228" alt="">
-          <img class="bisc b3" src="assets/biscuit-3.webp" width="222" height="218" alt="">
+      <div class="stage" id="stage" role="img" aria-label="A bag of La Gazelle biscuits with three biscuits and a glass of tea" data-i18n-label="stageLabel">
+        <svg class="foil" viewBox="0 0 400 400" aria-hidden="true">
+          <path id="foil" d="M200 30a85 85 0 0 1 82 106a85 85 0 0 1 0 128a85 85 0 0 1-164 0a85 85 0 0 1 0-128a85 85 0 0 1 82-106z"/>
+          <path opacity=".35" d="M200 6a104 104 0 0 1 100 128a104 104 0 0 1 0 132a104 104 0 0 1-200 0a104 104 0 0 1 0-132a104 104 0 0 1 100-128z"/>
+        </svg>
+        <img class="glass" id="glass" src="assets/tea-glass.webp" width="508" height="793" alt="">
+        <img class="bisc b1" id="b1" src="assets/biscuit-1.webp" width="238" height="238" alt="">
+        <img class="bisc b2" id="b2" src="assets/biscuit-2.webp" width="241" height="228" alt="">
+        <img class="bisc b3" id="b3" src="assets/biscuit-3.webp" width="222" height="218" alt="">
+        <img class="bag" id="bag" src="assets/product-package.webp" width="540" height="566" fetchpriority="high" alt="">
+      </div>
+
+      <div class="scene-cta" id="sceneCta">
+        <h2 class="scene-title" data-i18n="atayTitle">The perfect companion for your atay</h2>
+        <p class="alt-lang" data-i18n="ataySub" lang="ar">الرفيق المثالي لكأس أتايك</p>
+        <p class="fr" lang="fr">Le compagnon idéal de votre thé</p>
+        <div class="btns">
+          <a class="btn btn-gold" href="https://wa.me/22247906456" data-wa="waOrder" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+            <span data-i18n="orderWhatsApp">Order on WhatsApp</span>
+          </a>
+          <a class="btn btn-line" href="#wholesale" data-i18n="wholesalePrices">Wholesale prices</a>
         </div>
       </div>
+
+      <div class="hint" id="hint" aria-hidden="true"><span data-i18n="hint">Scroll</span><i></i></div>
     </div>
   </header>
 
   <main id="main">
-    <section class="sec" id="biscuits" aria-labelledby="atay-title">
-      <div class="wrap atay">
-        <div class="trio">
-          <img src="assets/biscuit-1.webp" width="238" height="238" loading="lazy" alt="La Gazelle biscuit" data-i18n-alt="biscuitAlt">
-          <img src="assets/biscuit-2.webp" width="241" height="228" loading="lazy" alt="La Gazelle biscuit" data-i18n-alt="biscuitAlt">
-          <img src="assets/biscuit-3.webp" width="222" height="218" loading="lazy" alt="La Gazelle biscuit" data-i18n-alt="biscuitAlt">
+    <section class="sec statement" id="biscuits" aria-labelledby="say-title">
+      <div class="wrap">
+        <h2 class="say" id="say-title" data-i18n="say">Pressed with our flower pattern, baked until golden, and packed the same day in Nouakchott.</h2>
+        <p class="say-alt alt-lang" data-i18n="sayAlt" lang="ar">مطبوع بنقشة الزهرة، مخبوز حتى يصير ذهبياً، ومعبأ في نفس اليوم في نواكشوط.</p>
+        <p class="body" data-i18n="atayText">Each biscuit is pressed with our flower pattern and baked until golden. Light enough for the third glass, satisfying enough for the first. Sold in 100 g bags in shops across Nouakchott.</p>
+        <ul class="pills">
+          <li data-i18n="pillRecipe">Traditional recipe</li>
+          <li data-i18n="pillColours">No artificial colours</li>
+          <li data-i18n="pillPreservatives">No added preservatives</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sec chapters" aria-label="Moments for La Gazelle" data-i18n-label="chaptersLabel">
+      <div class="wrap chapter-list">
+        <div class="chapter">
+          <img class="spin" src="assets/biscuit-1.webp" width="238" height="238" loading="lazy" alt="">
+          <div><h3 data-i18n="ch1Title">For the first glass</h3><p data-i18n="ch1Text">Crisp and lightly sweet, so the strong first glass of atay has something to lean on.</p></div>
         </div>
-        <div>
-          <h2 class="h2" id="atay-title" data-i18n="atayTitle">The perfect companion for your atay</h2>
-          <p class="h2-sub" data-i18n="ataySub" lang="ar">الرفيق المثالي لكأس أتايك</p>
-          <p class="body" data-i18n="atayText">Each biscuit is pressed with our flower pattern and baked until golden. Light enough for the third glass, satisfying enough for the first. Sold in 100 g bags in shops across Nouakchott.</p>
-          <ul class="pills">
-            <li data-i18n="pillRecipe">Traditional recipe</li>
-            <li data-i18n="pillColours">No artificial colours</li>
-            <li data-i18n="pillPreservatives">No added preservatives</li>
-          </ul>
+        <div class="chapter">
+          <img class="spin" src="assets/biscuit-2.webp" width="241" height="228" loading="lazy" alt="">
+          <div><h3 data-i18n="ch2Title">For the guests</h3><p data-i18n="ch2Text">A plate of La Gazelle on the tray says welcome before anyone sits down.</p></div>
+        </div>
+        <div class="chapter">
+          <img class="spin" src="assets/biscuit-3.webp" width="222" height="218" loading="lazy" alt="">
+          <div><h3 data-i18n="ch3Title">For the shop shelf</h3><p data-i18n="ch3Text">A bag customers recognise, at a price that moves. Ask us for wholesale.</p></div>
         </div>
       </div>
     </section>
@@ -183,6 +210,18 @@
         </div>
       </div>
     </section>
+
+    <section class="sec dark closing" aria-labelledby="closing-title">
+      <div class="wrap">
+        <h2 class="closing-title" id="closing-title" data-i18n="endTitle">Put the kettle on. We bring the biscuits.</h2>
+        <p class="alt-lang" data-i18n="endAlt" lang="ar">حضّر الأتاي، والبسكويت علينا</p>
+        <div class="btns">
+          <a class="btn btn-gold" href="https://wa.me/22247906456" data-wa="waOrder" target="_blank" rel="noopener" data-i18n="orderWhatsApp">Order on WhatsApp</a>
+          <a class="btn btn-line" href="https://wa.me/22247906456" data-wa="waWholesale" target="_blank" rel="noopener" data-i18n="askWholesale">Ask for wholesale prices</a>
+        </div>
+        <p class="closing-contact"><span data-i18n="whatsapp">WhatsApp:</span> <bdi dir="ltr">+222 47 90 64 56</bdi> · <span data-i18n="call">Call:</span> <bdi dir="ltr">+222 43 78 59 51</bdi></p>
+      </div>
+    </section>
   </main>
 
   <footer class="dark">
@@ -200,6 +239,10 @@
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
   </a>
 
-  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="motion.js" defer></script>
 </body>
 </html>
